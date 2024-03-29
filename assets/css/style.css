@@ -1,0 +1,282 @@
+:root{
+    --main-color:white;
+    --bbutton-color:rgb(191, 191, 191, 61);
+    --color-hover1: rgb(198, 197, 197);
+    --button-color2: rgb(216, 216, 217);
+    --dark-color:black;
+    --theme-button-padding: 0.6em 1em 0.6em 1em;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    font-size: 2rem; 
+}
+
+.a:hover{
+    color: var(--color-hover1);
+    background-color: var(--main-color);
+    border-bottom:solid 4px var(--bbutton-color);
+}
+
+.a:focus{
+    color: var(--color-hover1);
+    background-color: var(--main-color);
+    border-bottom:solid 4px var(--bbutton-color);
+}
+
+
+.button1{
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 4.9em;
+    padding: var(--theme-button-padding);
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    background-color: var(--button-color2);
+    color: var(--main-color);
+    border-radius: 30px;
+}
+
+.button1:hover{
+        color: var(--main-color);
+        background-color: var(--color-hover1);
+        transition: 0.3s;
+        text-decoration: none;
+}
+
+.button2{
+    display: inline-block;
+    margin-top: 1.3em;
+    padding: 0.7em 1.2em;
+    background-color: var(--main-color);
+    color: red;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow:  1px 4px 8px var(--button-color2);
+    text-decoration: none;
+
+}
+
+/* lebih gede dari button */
+.button2:hover{
+    background-color: var(--main-color);
+    color: red;
+    transform: scale(1.1);   
+    transition: all 0.2s; /*transisi pada saat perubahan warna teks ketika mouse di atas button*/
+    box-shadow: 1px 4px 9px 1px var(--color-hover1);
+    text-decoration: none;
+}
+
+.button3{
+    display: inline-block;
+    margin-top: 1.3em;
+    padding: 0.5em 1em;
+    margin-left: 80px;
+    background-color: red;
+    color: var(--main-color);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 1.1em;
+    box-shadow:  1px 4px 9px 1px var(--bbutton-color);
+    text-decoration: none;
+
+}
+
+/* reverse */
+.button3:hover{
+    background-color: red;
+    color: var(--dark-color); 
+    transition: all 1s; /*transisi pada saat perubahan warna teks ketika mouse di atas button*/
+    box-shadow: 1px 4px 9px 1px var(--color-hover1);
+    text-decoration: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 0.5em 1em;
+}
+
+/* HEADER */
+.nav-container{
+    background-color: var(--main-color); /*ngambil dari root*/
+    top: 0px;
+    margin-bottom: 70px;
+}
+
+.nav-container header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 9px;
+}
+
+.nav-container .logo img{
+    width: 136px;
+    object-fit: cover;
+    margin: 1.4em 1em 0em -4em;
+    margin-right: 75px;
+}
+
+.nav-container ul{
+    list-style-type: none; /*menghilangkan bulat-bulat list*/
+    margin: 0;
+    padding: 0;
+    display: flex; /*supaya lurus dan ga ke bawah*/
+    width: 750px;
+}
+
+.nav-container li a{
+    display: block;
+    color: rgb(68, 68, 68);
+    padding: 1.4em 1.9em;
+    text-decoration: none;
+    height: 90px; /*garis bawah*/
+    margin-top: 23px;
+    letter-spacing: -1.2px;
+}
+
+/* END HEADER */
+
+/* HERO */
+.info-container{
+    background-image:var(--main-color);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center; /*ditengah tulisannya*/
+    justify-content: center;
+    margin-left: 2.8em;
+}
+
+.info-container .foto img{
+    height: 535px;
+    width: 380px;
+    object-fit: cover;
+    margin: 1.9em 1em 0em -4em;
+}
+
+.info-container .foto2 img{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    margin: 1em 1em 0em 1.5em;
+}
+
+.info-text h1{
+    font-size: 3.5em;
+    color: var(--dark-color);
+    display: flex;
+    width: 790px;
+    font-weight: 900px;
+    line-height: 50px;
+    margin-top: 3em;
+    letter-spacing: -2px;
+}
+
+.info-text2 h1{
+    font-size: 2.8em;
+    color: rgb(45, 43, 58);
+    display: flex;
+    width: 790px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    margin-left: 70px;
+    margin-top: 85px;
+    text-shadow: 5px 5px 5px rgb(186, 184, 184);
+}
+
+
+.info-text p{
+    display: flex;
+    font-size:medium;
+    font-weight:300;
+    margin: 0;
+    text-align: left; 
+    width: 790px;
+    line-height: 26px;
+    
+}
+
+.info-text2 p{
+    display: flex;
+    font-size:medium;
+    font-weight: 300;
+    margin: 0;
+    text-align: left; 
+    width: 790px;
+    line-height: 26px;
+    margin-left: 75px;
+    margin-top: -10px;
+    
+}
+
+.info-text .button2{
+    font-weight: 600;
+}
+/* END OF HERO */
+
+/* BLOG */
+
+.blog-index {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex; /*teks kanan kiri*/
+    flex-flow: row wrap;  /*display flex. Jadikan konten dalam satu baris (row), jika tidak muat ke baris berikutnya(wrap)*/
+    justify-content: space-between;
+    padding: 5% 5% 5% 5%;
+    
+  }
+  
+  .blog-index .snippet {
+    width: 30%;
+    margin-top: 1rem;
+    border-radius: 4%;
+    box-shadow: 11px 14px 8px rgb(194, 194, 194);
+  }
+  
+  .blog-index .snippet-img {
+    margin-left: 3.6em;
+    width: 64%; /*gambar keseluruhan*/
+  }
+  
+  .blog-index .snippet-txt { 
+    padding: 0 1.5em 1em;
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+.snippet-txt h2{
+    color: rgb(63, 63, 63);
+    font-size:25px;
+    text-align: center;
+}
+
+.snippet-txt p{
+    color: rgb(81, 80, 80);
+    text-align: center;
+    line-height: 25px;
+    font-size: medium;
+  }
+ 
+  
+  /* END OF BLOG */
